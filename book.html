@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Liên kết link css -->
+    <link rel="stylesheet" href="book.css" />
+    <link rel="stylesheet" href="Banner1.css" />
+    <link rel="stylesheet" href="Banner2.css" />
+    <link rel="stylesheet" href="Banner3.css" />
+    <link rel="stylesheet" href="Categories1.css" />
+    <link rel="stylesheet" href="Categories2.css" />
+    <link rel="stylesheet" href="Categories3.css" />
+    <link rel="stylesheet" href="background1.css" />
+
+    <!-- Logo icon Website -->
+    <link rel="icon" href="Image/Logo.png" />
+
+    <!-- Liên kết link js -->
+    <script
+      src="https://kit.fontawesome.com/dfe86c678f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tên Website -->
+    <title>THPT Bình Mỹ</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- 2 div dễ dàng cho việc dùng flexbox -->
+        <div class="navbar-row">
+          <!-- Logo và Tên trường -->
+          <div class="logo-nav">
+            <img
+              class="logo"
+              src="Image/Logo.png"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                object-fit: cover;
+              "
+            />
+            <p><b>THPT Bình Mỹ</b></p>
+          </div>
+
+          <!-- Danh sách thanh điều hướng -->
+          <ul class="list-nav">
+            <li class="items-nav">
+              <a href="index.html" class="link-nav" id="Home">Trang Chủ</a>
+            </li>
+            <li class="items-nav">
+              <a href="book.html" class="link-nav" id="Book">Sách</a>
+            </li>
+            <li class="items-nav">
+              <a href="website.html" class="link-nav" id="Website">Website</a>
+            </li>
+            <li class="items-nav">
+              <a
+                href="https://chatgpt.com/"
+                target="_blank"
+                class="link-nav"
+                id="AI"
+                >AI</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="https://github.com/AnnKhangg/dsasd" target="_blank">
+            <i class="fa-brands fa-github fa-2x" id="Github"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Cân chỉnh cho banner -->
+      <div class="banner-center">
+        <!-- Banner -->
+        <div class="banner">
+          <!-- Banner sách thứ 1 -->
+          <div id="bannerBook1">
+            <!-- Phần màu cho bên phải -->
+            <div class="color-right" id="color1"></div>
+
+            <!-- Banner sách -->
+            <div class="book-banner">
+              <img src="Image/Book/Book1.jpg" class="book" />
+
+              <p class="introduction-banner">
+                + Tác giả: José Mauro de Vasconcelos (1920 – 1984, Brazil)
+              </p>
+              <p class="introduction-banner">
+                + Giải thưởng / đặc biệt: Tác phẩm kinh điển, dịch ra hơn 20
+                ngôn ngữ, được đưa vào chương trình học Brazil và chuyển thể
+                thành phim.
+              </p>
+              <p class="introduction-banner">
+                + Giá trung bình: 90.000 – 110.000 ₫ (bản bìa mềm), ~250.000 ₫
+                (bản đặc biệt).
+              </p>
+              <p class="introduction-banner">
+                + Nơi mua: Nhã Nam, Fahasa, Tiki, Shopee, Lazada.
+              </p>
+            </div>
+
+            <!-- Giới thiệu về cuốn sách -->
+            <div class="about-book">
+              <h1 class="head1" id="head1"><i>Cây Cam Ngọt Của Tôi</i></h1>
+
+              <p class="p1">
+                “Cây cam ngọt của tôi” là tiểu thuyết cảm động của José Mauro de
+                Vasconcelos, kể về cậu bé Zezé nghèo khổ nhưng giàu tình cảm và
+                trí tưởng tượng. Qua tình bạn với cây cam, tác phẩm khắc họa
+                tuổi thơ đầy mất mát, đồng thời ca ngợi nghị lực, tình yêu
+                thương và khát vọng sống con người.
+              </p>
+
+              <button id="GetBook1">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-C%C3%A2y-Cam-Ng%E1%BB%8Dt-C%E1%BB%A7a-T%C3%B4i-(Nh%C3%A3-Nam-HCM)-i.404602141.9338588760?extraParams=%7B%22display_model_id%22%3A25222846745%2C%22model_selection_logic%22%3A3%7D&sp_atk=779e038c-33bd-42f9-a26f-bc22f16dbda3&xptdk=779e038c-33bd-42f9-a26f-bc22f16dbda3"
+                  target="_blank"
+                >
+                  Get This Book
+                </a>
+              </button>
+            </div>
+
+            <button type="button" class="btn-banner" id="btnBack1">
+              <p>&lt</p>
+            </button>
+            <button type="button" class="btn-banner" id="btnNext1">
+              <p>&gt</p>
+            </button>
+          </div>
+
+          <!-- Banner sách thứ 2 -->
+          <div id="bannerBook2">
+            <!-- Phần màu cho bên phải -->
+            <div class="color-right" id="color2"></div>
+
+            <!-- Banner sách -->
+            <div class="book-banner">
+              <img src="Image/Book/Book2.png" class="book" />
+
+              <p class="introduction-banner">
+                + Tác giả: Dale Carnegie (1888-1955), Mỹ
+              </p>
+              <p class="introduction-banner">
+                + Giải thưởng / đặc biệt: cuốn sách thuộc thể loại “self-help”
+                kinh điển, được xem là một trong những quyển sách thay đổi tư
+                duy giao tiếp và cách sống, đã bán được hàng chục triệu bản toàn
+                cầu và được dịch ra nhiều ngôn ngữ.
+              </p>
+              <p class="introduction-banner">
+                + Giá trung bình: 70.000 - 160.000 ₫.
+              </p>
+              <p class="introduction-banner">
+                + Nơi mua: Các nhà sách, Fahasa, Tiki, Shopee, Lazada, SBOOKS.
+              </p>
+            </div>
+
+            <!-- Giới thiệu về cuốn sách -->
+            <div class="about-book">
+              <h1 class="head1" id="head2"><i>Đắc Nhân Tâm</i></h1>
+
+              <p class="p1">
+                “Đắc nhân tâm” là tác phẩm kinh điển của Dale Carnegie (1888 –
+                1955, Mỹ), hướng dẫn nghệ thuật giao tiếp và thấu hiểu con
+                người. Sách dạy cách ứng xử, tạo thiện cảm và ảnh hưởng tích cực
+                đến người khác, giúp rèn luyện kỹ năng sống, nâng cao thành công
+                và hạnh phúc trong cuộc sống.
+              </p>
+
+              <button id="GetBook2">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-%C4%90%E1%BA%AFc-Nh%C3%A2n-T%C3%A2m(-kh%E1%BB%95-l%E1%BB%9Bn)-i.90428978.2181906216?extraParams=%7B%22display_model_id%22%3A42128295831%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get This Book
+                </a>
+              </button>
+            </div>
+
+            <button type="button" class="btn-banner" id="btnBack2">
+              <p>&lt</p>
+            </button>
+            <button type="button" class="btn-banner" id="btnNext2">
+              <p>&gt</p>
+            </button>
+          </div>
+
+          <!-- Banner sách thứ 3 -->
+          <div id="bannerBook3">
+            <!-- Phần màu cho bên phải -->
+            <div class="color-right" id="color3"></div>
+
+            <!-- Banner sách -->
+            <div class="book-banner">
+              <img src="Image/Book/Book3.png" class="book" />
+
+              <p class="introduction-banner">
+                + Tác giả: Hector Malot — 1830 – 1907.
+              </p>
+              <p class="introduction-banner">
+                + Giải thưởng / đặc biệt: Là tiểu thuyết kinh điển Pháp (xuất
+                bản lần đầu 1878); được giải thưởng của Viện Hàn lâm Văn học
+                Pháp; được dịch nhiều thứ tiếng, tái bản nhiều lần và được yêu
+                thích toàn cầu.
+              </p>
+              <p class="introduction-banner">
+                + Giá trung bình: khoảng 130.000 – 180.000 ₫ tùy ấn bản.
+              </p>
+              <p class="introduction-banner">
+                + Nơi mua: các nhà sách và sàn thương mại điện tử tại Việt Nam
+                như Fahasa, Minh Long Book, Tiki,…
+              </p>
+            </div>
+
+            <!-- Giới thiệu về cuốn sách -->
+            <div class="about-book">
+              <h1 class="head1" id="head3"><i>Không Gia Đình</i></h1>
+
+              <p class="p1">
+                “Không gia đình” là tiểu thuyết nổi tiếng của Hector Malot, kể
+                về cậu bé Remi mồ côi, phải lang thang kiếm sống cùng gánh xiếc
+                lưu động. Qua hành trình gian khổ, tác phẩm ca ngợi lòng dũng
+                cảm, nhân hậu và khát vọng tìm kiếm mái ấm, tình yêu thương giữa
+                con người với nhau.
+              </p>
+
+              <button id="GetBook3">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-Kh%C3%B4ng-Gia-%C4%90%C3%ACnh-B%C3%ACa-C%E1%BB%A9ng-(BC)-T%C3%A1i-b%E1%BA%A3n-2024-Ti%E1%BB%83u-thuy%E1%BA%BFt-V%C4%83n-H%E1%BB%8Dc-Kinh-%C4%90i%E1%BB%83n-Hector-Malot-2HBooks-i.1096078460.27109650849?extraParams=%7B%22display_model_id%22%3A166654348737%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get This Book
+                </a>
+              </button>
+            </div>
+
+            <button type="button" class="btn-banner" id="btnBack3">
+              <p>&lt</p>
+            </button>
+            <button type="button" class="btn-banner" id="btnNext3">
+              <p>&gt</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Các thể loại sách -->
+      <div class="categories">
+        <!-- Phần header cho phần giới thiệu thể loại -->
+        <div class="border-head">
+          <h1 class="head2"><b>Những thể loại sách</b></h1>
+        </div>
+
+        <!-- Flexbox cho các thể loại -->
+        <div class="flex-categories">
+          <!-- Chọn thể loại Văn Học -->
+          <div id="choose-categories1">
+            <!-- Ảnh tượng trưng cho sách -->
+            <img src="Image/Book/Book4.jpg" class="book" />
+
+            <!-- Head cho sách -->
+            <div class="about-categories">
+              <h1 class="head-categories">Thể Loại</h1>
+              <h1 class="name-categories"><i>Văn Học</i></h1>
+            </div>
+
+            <!-- Nút scroll đến sách văn học -->
+            <div class="btn-scroll">
+              <button type="button" id="Literatures">See More</button>
+            </div>
+          </div>
+
+          <!-- Chọn thể loại Toán Học -->
+          <div id="choose-categories2">
+            <!-- Ảnh tượng trưng cho sách -->
+            <img src="Image/Book/Book5.jpg" class="book" />
+
+            <!-- Head cho sách -->
+            <div class="about-categories">
+              <h1 class="head-categories">Thể Loại</h1>
+              <h1 class="name-categories"><i>Toán Học</i></h1>
+            </div>
+
+            <!-- Nút scroll đến sách văn học -->
+            <div class="btn-scroll">
+              <button type="button" id="Mathematics">See More</button>
+            </div>
+          </div>
+
+          <!-- Chọn thể loại Tiếng Anh -->
+          <div id="choose-categories3">
+            <!-- Ảnh tượng trưng cho sách -->
+            <img src="Image/Book/Book6.jpg" class="book" />
+
+            <!-- Head cho sách -->
+            <div class="about-categories">
+              <h1 class="head-categories">Thể Loại</h1>
+              <h1 class="name-categories"><i>Tiếng Anh</i></h1>
+            </div>
+
+            <!-- Nút scroll đến sách văn học -->
+            <div class="btn-scroll">
+              <button type="button" id="English">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Những cuốn sách đang thịnh hành -->
+      <div class="trending">
+        <!-- Phần header cho phần giới thiệu thể loại -->
+        <div class="border-head">
+          <h1 class="head2"><b>Những cuốn sách đang thịnh hành</b></h1>
+        </div>
+
+        <!-- Flex cho các cuốn sách đang thịnh hành -->
+        <div class="flex-trending">
+          <!-- Cuốn sách thịnh hành thứ 1 -->
+          <div class="choose-trending">
+            <!-- Ảnh tượng trưng cho sách đang thịnh hành -->
+            <img src="Image/Book/Book1.jpg" class="book" />
+
+            <!-- Tên cuốn sách và tác giả -->
+            <div class="about-trending">
+              <h2 class="name-trending">Cây Cam Ngọt Của Tôi</h2>
+              <p class="author">José Mauro de Vasconcelos</p>
+            </div>
+
+            <!-- Nút mua sách -->
+            <div class="btn-trending">
+              <button type="button" id="btn-buy-1st">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-C%C3%A2y-Cam-Ng%E1%BB%8Dt-C%E1%BB%A7a-T%C3%B4i-(Nh%C3%A3-Nam-HCM)-i.404602141.9338588760?extraParams=%7B%22display_model_id%22%3A25222846745%2C%22model_selection_logic%22%3A3%7D&sp_atk=779e038c-33bd-42f9-a26f-bc22f16dbda3&xptdk=779e038c-33bd-42f9-a26f-bc22f16dbda3"
+                  target="_blank"
+                >
+                  Get It
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cuốn sách thịnh hành thứ 2 -->
+          <div class="choose-trending">
+            <!-- Ảnh tượng trưng cho sách đang thịnh hành -->
+            <img
+              src="Image/Book/Book7.webp"
+              class="book"
+              style="height: 296px; object-fit: cover"
+            />
+
+            <!-- Tên cuốn sách và tác giả -->
+            <div class="about-trending">
+              <h2 class="name-trending">Sưởi Ấm Mặt Trời</h2>
+              <p class="author">José Mauro de Vasconcelos</p>
+            </div>
+
+            <!-- Nút mua sách -->
+            <div class="btn-trending">
+              <button type="button" id="btn-buy-2nd">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-S%C6%B0%E1%BB%9Fi-%E1%BA%A5m-m%E1%BA%B7t-tr%E1%BB%9Di-(C%C3%A2y-cam-ng%E1%BB%8Dt-c%E1%BB%A7a-t%C3%B4i-Ph%E1%BA%A7n-2)-(Nh%C3%A3-Nam-HCM)-i.404602141.27205513872?extraParams=%7B%22display_model_id%22%3A178310848434%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get It
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cuốn sách thịnh hành thứ 3 -->
+          <div class="choose-trending">
+            <!-- Ảnh tượng trưng cho sách đang thịnh hành -->
+            <img
+              src="Image/Book/Book8.jpg"
+              class="book"
+              style="height: 296px; object-fit: cover"
+            />
+
+            <!-- Tên cuốn sách và tác giả -->
+            <div class="about-trending">
+              <h2 class="name-trending">Hồi Ức Vụn Vỡ</h2>
+              <p class="author">Colleen Hoover</p>
+            </div>
+
+            <!-- Nút mua sách -->
+            <div class="btn-trending">
+              <button type="button" id="btn-buy-3rd">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-H%E1%BB%93i-%E1%BB%A8c-V%E1%BB%A5n-V%E1%BB%A1-(Reminders-Of-Him)-Colleen-Hoover-i.579093513.25822237961?extraParams=%7B%22display_model_id%22%3A98897821014%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get It
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cuốn sách thịnh hành thứ 4 -->
+          <div class="choose-trending">
+            <!-- Ảnh tượng trưng cho sách đang thịnh hành -->
+            <img
+              src="Image/Book/Book9.jpg"
+              class="book"
+              style="height: 296px; object-fit: cover"
+            />
+
+            <!-- Tên cuốn sách và tác giả -->
+            <div class="about-trending">
+              <h2 class="name-trending">Thỏ Bảy Màu</h2>
+              <p class="author">Thỏ Bảy Màu</p>
+            </div>
+
+            <!-- Nút mua sách -->
+            <div class="btn-trending">
+              <button type="button" id="btn-buy-4th">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-Th%E1%BB%8F-B%E1%BA%A3y-M%C3%A0u-V%C3%A0-Nh%E1%BB%AFng-Ng%C6%B0%E1%BB%9Di-Ngh%C4%A9-N%C3%B3-L%C3%A0-B%E1%BA%A1n-Hu%E1%BB%B3nh-Th%C3%A1i-Ng%E1%BB%8Dc-Wonders-i.989372131.18980267237?extraParams=%7B%22display_model_id%22%3A225253488329%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get It
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cuốn sách thịnh hành thứ 5 -->
+          <div class="choose-trending">
+            <!-- Ảnh tượng trưng cho sách đang thịnh hành -->
+            <img
+              src="Image/Book/Book10.jpg"
+              class="book"
+              style="height: 296px; object-fit: cover"
+            />
+
+            <!-- Tên cuốn sách và tác giả -->
+            <div class="about-trending">
+              <h2 class="name-trending">Làm Đĩ</h2>
+              <p class="author">Vũ Trọng Phụng</p>
+            </div>
+
+            <!-- Nút mua sách -->
+            <div class="btn-trending">
+              <button type="button" id="btn-buy-5th">
+                <a
+                  class="link-book"
+                  href="https://shopee.vn/S%C3%A1ch-L%C3%A0m-%C4%91%C4%A9-(-V%C5%A9-Tr%E1%BB%8Dng-Ph%E1%BB%A5ng-)-i.90428978.13788703532?extraParams=%7B%22display_model_id%22%3A172046965173%2C%22model_selection_logic%22%3A3%7D"
+                  target="_blank"
+                >
+                  Get It
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Good-text">
+        <!-- Phần background kèm lời trích hay -->
+        <div class="bg active" id="background-text1">
+          <!-- Hình ảnh background -->
+          <img src="..\Image\Background.png" class="book-background" />
+
+          <!-- Chữ trong background -->
+          <div class="text-on-background">
+            <p class="text-on">
+              "Một Cuốn Sách Hay Là Một Cuốn Sách Khiến Bạn Quên Mất Rằng Bạn
+              Đang Đọc Sách"
+            </p>
+            <p class="author">--JEFFERY DEAVER--</p>
+          </div>
+        </div>
+
+        <!-- Phần background kèm lời trích hay 2 -->
+        <div class="bg" id="background-text2">
+          <!-- Hình ảnh background -->
+          <img src="../Image/Background2.jpg" class="book-background" />
+
+          <!-- Chữ trong background -->
+          <div class="text-on-background">
+            <p class="text-on">
+              "Nếu ta không thể thưởng thức một cuốn sách nhiều lần, thì chẳng
+              có ích gì khi đọc nó"
+            </p>
+            <p class="author">--Oscar Wilde--</p>
+          </div>
+        </div>
+
+        <!-- Phần background kèm lời trích hay 3 -->
+        <div class="bg" id="background-text3">
+          <!-- Hình ảnh background -->
+          <img src="Image/Background4.png" class="book-background" />
+
+          <!-- Chữ trong background -->
+          <div class="text-on-background">
+            <p class="text-on">
+              "Nếu cuốn sách ta đang đọc không đánh thức ta như một cú đập vào
+              đầu, thì đọc nó để làm gì? Một cuốn sách phải là chiếc rìu đập vỡ
+              lớp băng trong tâm hồn ta"
+            </p>
+            <p class="author">--Franz Kafka--</p>
+          </div>
+        </div>
+
+        <!-- Phần background kèm lời trích hay 4 -->
+        <div class="bg" id="background-text4">
+          <!-- Hình ảnh background -->
+          <img src="Image/Background3.jpg" class="book-background" />
+
+          <!-- Chữ trong background -->
+          <div class="text-on-background">
+            <p class="text-on">
+              "Không bao giờ có tách trà nào đủ lớn, cũng không có cuốn sách nào
+              đủ dài đối với tôi"
+            </p>
+            <p class="author">--C.S. Lewis--</p>
+          </div>
+        </div>
+
+        <!-- Phần background kèm lời trích hay 5 -->
+        <div class="bg" id="background-text5">
+          <!-- Hình ảnh background -->
+          <img src="Image/Background5.webp" class="book-background" />
+
+          <!-- Chữ trong background -->
+          <div class="text-on-background">
+            <p class="text-on">
+              "Nếu bạn chỉ đọc những cuốn sách mà ai cũng đang đọc, bạn sẽ chỉ
+              nghĩ được những điều mà ai cũng đang nghĩ. Sách là người bạn tĩnh
+              lặng và bền bỉ nhất, là người cố vấn thông thái và người thầy kiên
+              nhẫn nhất"
+            </p>
+            <p class="author">--Haruki Murakami--</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">a</div>
+
+      <script src="book.js"></script>
+    </main>
+  </body>
+</html>

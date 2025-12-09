@@ -1,0 +1,565 @@
+/* Cài đặt mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Quicksand";
+}
+
+/* Thanh Navbar điều hướng */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+
+  width: 100%;
+  background-color: white;
+
+  z-index: 1000;
+}
+
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  gap: 20px;
+}
+
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
+}
+
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.link-nav {
+  display: block;
+
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.696);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.link-nav:hover {
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+}
+
+#Home::before {
+  content: "\f015";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#Book::before {
+  content: "\f02d";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#Website::before {
+  content: "\f57d";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#AI::before {
+  content: "\f544";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+.navbar-extra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 5px;
+}
+
+#Github,
+#Twitter,
+#Light-Night {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
+  border-radius: 0;
+  cursor: pointer;
+
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
+}
+
+#Github:hover,
+#Twitter:hover,
+#Light-Night:hover {
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+  border-radius: 10px;
+}
+
+/* Phần chính của trang book */
+
+main {
+  position: relative;
+  top: 40px;
+}
+
+/* Cân chỉnh banner ở giữa */
+.banner-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+
+  width: 100%;
+  height: 400px;
+
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+/* position: relative cho phần chọn thể loại sách */
+.categories {
+  position: relative;
+  top: 100px;
+  left: 1%;
+  right: 1%;
+
+  width: 98%;
+  height: 400px;
+}
+
+/* Thiết kế header cho phần giới thiệu thể loại */
+.border-head {
+  width: 40%;
+  height: auto;
+
+  background: linear-gradient(135deg, #5a5bfa, #81b1fa);
+  border-radius: 10px 0% 0% 10px;
+  clip-path: polygon(0 0, 100% 0, 82% 50%, 100% 100%, 0 100%);
+}
+
+.head2 {
+  margin-left: 5px;
+
+  color: rgb(255, 255, 255);
+}
+
+/* Flexbox cho các thể loại */
+.flex-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 50px;
+
+  position: relative;
+
+  width: 100%;
+  height: 357px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Những cuốn sách đang thịnh hành */
+.trending {
+  position: relative;
+  top: 175px;
+  left: 1%;
+  right: 1%;
+
+  width: 98%;
+  height: 500px;
+}
+
+/* Thiết kế header cho phần những cuốn sách thịnh hành */
+.trending .border-head {
+  width: 55%;
+
+  background: linear-gradient(135deg, #5433ff, #20bdff, #a5fecb);
+}
+
+.flex-trending {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 30px;
+
+  position: relative;
+
+  height: 475px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.choose-trending {
+  flex: 0 0 20%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 30px;
+
+  min-width: 275px;
+  height: 420px;
+}
+
+.about-trending {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 10px;
+}
+
+.name-trending {
+  position: relative;
+}
+
+.author {
+  position: relative;
+
+  color: rgba(128, 128, 128, 0.683);
+}
+
+.btn-trending {
+  position: relative;
+  top: 13px;
+
+  width: 100%;
+}
+
+/* Nút mua sách thịnh hành 1st */
+#btn-buy-1st {
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(135deg, #f9d423, #e65c00);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px rgb(205, 255, 42);
+  transition: box-shadow 0.5s;
+}
+
+#btn-buy-1st .link-book {
+  display: block;
+  font-size: 22px;
+}
+
+#btn-buy-1st:hover {
+  box-shadow: 0px 0px 20px rgb(205, 255, 42);
+}
+
+/* Nút mua sách thịnh hành 2nd */
+#btn-buy-2nd {
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(135deg, #acb6e5, #86fde8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #acb6e5;
+  transition: box-shadow 0.5s;
+}
+
+#btn-buy-2nd .link-book {
+  display: block;
+  font-size: 22px;
+}
+
+#btn-buy-2nd:hover {
+  box-shadow: 0px 0px 20px #79cbca;
+}
+
+/* Nút mua sách thịnh hành 3rd */
+#btn-buy-3rd {
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(135deg, #77a1d3, #79cbca, #e684ae);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #79cbca;
+  transition: box-shadow 0.5s;
+}
+
+#btn-buy-3rd .link-book {
+  display: block;
+  font-size: 22px;
+}
+
+#btn-buy-3rd:hover {
+  box-shadow: 0px 0px 20px #79cbca;
+}
+
+/* Nút mua sách thịnh hành 4th */
+#btn-buy-4th {
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #2b5876;
+  transition: box-shadow 0.5s;
+}
+
+#btn-buy-4th .link-book {
+  display: block;
+  font-size: 22px;
+}
+
+#btn-buy-4th:hover {
+  box-shadow: 0px 0px 20px #2b5876;
+}
+
+/* Nút mua sách thịnh hành 5th */
+#btn-buy-5th {
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(135deg, #b79891, #94716b);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px #b79891;
+  transition: box-shadow 0.5s;
+}
+
+#btn-buy-5th .link-book {
+  display: block;
+  font-size: 22px;
+}
+
+#btn-buy-5th:hover {
+  box-shadow: 0px 0px 20px #b79891;
+}
+
+#Good-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 250px;
+}
+
+/* Lời trích hay 1 */
+#background-text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  visibility: visible;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+/* Lời trích hay 2 */
+#background-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: auto;
+
+  visibility: visible;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+/* Lời trích hay 3 */
+#background-text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: auto;
+
+  visibility: visible;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+/* Lời trích hay 4 */
+#background-text4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: auto;
+
+  visibility: visible;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+/* Lời trích hay 5 */
+#background-text5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: auto;
+
+  visibility: visible;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+/* Active hiện banner */
+#Good-text .active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.book-background {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px grey;
+  filter: brightness(25%);
+}
+
+.text-on-background {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+
+  gap: 30px;
+
+  position: absolute;
+
+  width: 60%;
+}
+
+.text-on {
+  color: white;
+  font-size: 1.5em;
+}
+
+.text-on-background .author {
+  color: rgba(221, 221, 221, 0.847);
+  font-size: 1.3em;
+  text-align: end;
+}
+
+.btn-background {
+  width: 55px;
+  height: 50px;
+
+  margin: 5px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
+  text-align: center;
+}
+
+#BackgroundBack1 {
+  background-color: #ff2146;
+  color: white;
+}
+
+#BackgroundNext1 {
+  background-color: #12c2e9;
+  color: white;
+}
+.footer {
+  margin-top: 300px;
+  visibility: hidden;
+}

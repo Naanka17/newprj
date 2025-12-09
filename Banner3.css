@@ -1,0 +1,219 @@
+/* Banner thứ 1 */
+#bannerBook3 {
+    visibility: visible;
+    opacity: 1;
+
+    transition: opacity 1.5s ease;
+}
+
+/* Phần màu bên phải */
+#color3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 35%;
+    height: 100%;
+
+    background: linear-gradient(135deg, #A0B5EB, #C9F0E4);
+}
+
+/* Phần banner sách */
+.book-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 40px;
+    right: 300px;
+
+    width: 23%;
+    /* Sửa lại thành 23% khi làm xong thông tin sách */
+    height: 85%;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    transform: translate(0, 0);
+    z-index: 10;
+    transition: width 0.5s, transform 0.5s;
+}
+
+.book-banner:hover {
+    width: 32%;
+    height: 85%;
+
+    transform: translate(115px, 0);
+}
+
+.book {
+    width: 200px;
+    /* Sửa lại thành 200px khi làm xong thông tin sách */
+    height: auto;
+    object-fit: cover;
+
+    transform: translate(0, 0);
+    /* Sửa lại thành (0, 0) khi làm xong thông tin sách */
+    transition: width 1s ease, transform 1s ease;
+}
+
+.book-banner:hover .book {
+    width: 100px;
+
+    transform: translate(-135px, -7px);
+}
+
+.introduction-banner {
+    position: absolute;
+
+    width: 100%;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.book-banner:hover .introduction-banner {
+    position: relative;
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Giới thiệu về sách ở banner */
+.about-book {
+    position: absolute;
+
+    width: 50%;
+    height: 90%;
+
+    margin: 20px;
+}
+
+.head1 {
+    margin-bottom: 20px;
+
+    color: rgb(0, 0, 0);
+    font-family: "Playwrite No";
+    font-size: 2.5em
+}
+
+#head3 {
+    color: rgb(0, 214, 93);
+    font-family: "Cabin";
+}
+
+.p1 {
+    font-size: 1.2em;
+}
+
+#GetBook3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    ;
+    top: 25%;
+
+    width: 25%;
+
+    padding: 5px;
+
+    background-color: rgb(0, 255, 145);
+    border: none;
+    border-radius: 20px;
+    font-family: "Quicksand";
+    font-size: 1.1em;
+    box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.74);
+
+    cursor: pointer;
+
+    z-index: 2;
+    transition: box-shadow 0.5s, width 0.5s;
+}
+
+.link-book {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+}
+
+#GetBook3:hover {
+    width: 30%;
+
+    box-shadow: 0px 0px 20px rgb(0, 255, 145, 0.74);
+}
+
+/* #GetBook::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 3px;
+
+    background-color: rgb(124, 218, 255);
+    border-radius: 20px;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+} */
+
+/* Nút chuyển banner */
+.btn-banner {
+    width: 4%;
+    height: 13%;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 2em;
+
+    cursor: pointer;
+    z-index: 1000px;
+}
+
+#btnBack3 {
+    position: absolute;
+    top: 80%;
+    left: 87%;
+
+    background: rgb(255, 0, 0);
+    color: white;
+
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#btnBack3:hover {
+    background-color: rgb(255, 123, 123);
+    color: black;
+}
+
+#btnNext3 {
+    position: absolute;
+    top: 80%;
+    left: 92%;
+
+    background-color: rgba(255, 186, 58, 0.874);
+    color: white;
+
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#btnNext3:hover {
+    background-color: white;
+    color: black;
+}

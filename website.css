@@ -1,0 +1,159 @@
+/* Cài đặt mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Quicksand";
+}
+
+/* Thanh Navbar điều hướng */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+
+  width: 100%;
+  background-color: white;
+
+  z-index: 1000;
+}
+
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  gap: 20px;
+}
+
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
+}
+
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.link-nav {
+  display: block;
+
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.696);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.link-nav:hover {
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+}
+
+#Home::before {
+  content: "\f015";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#Book::before {
+  content: "\f02d";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#Website::before {
+  content: "\f57d";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+#AI::before {
+  content: "\f544";
+  font-family: "FontAwesome";
+
+  position: relative;
+  right: 5px;
+}
+
+.navbar-extra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 5px;
+}
+
+#Github,
+#Twitter,
+#Light-Night {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
+  border-radius: 0;
+  cursor: pointer;
+
+  transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
+}
+
+#Github:hover,
+#Twitter:hover {
+  background-color: rgba(135, 135, 135, 0.498);
+  color: black;
+  border-radius: 10px;
+}
+
+/* triet */
+#triet {
+  width: 16.4%;
+  position: relative;
+  bottom: 121px;
+  left: 638px;
+  z-index: 3;
+}
+
+#bantho {
+  width: 60%;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+
+#cm {
+  position: relative;
+  right: 370px;
+  bottom: 120px;
+  z-index: 2;
+}
